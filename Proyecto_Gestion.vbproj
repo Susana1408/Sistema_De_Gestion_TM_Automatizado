@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6753F3A1-1F3B-4981-A8D3-F21FB9D747CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proyecto_Gestion.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto_Gestion</RootNamespace>
+    <AssemblyName>Proyecto_Gestion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Proyecto_Gestion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Proyecto_Gestion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GenerarOrdenServicio.Designer.vb">
+      <DependentUpon>GenerarOrdenServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarOrdenServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarOrdenServicioP.Designer.vb">
+      <DependentUpon>GenerarOrdenServicioP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarOrdenServicioP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialEquipo.Designer.vb">
+      <DependentUpon>HistorialEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialEquipoP.Designer.vb">
+      <DependentUpon>HistorialEquipoP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialEquipoP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indicadores.Designer.vb">
+      <DependentUpon>Indicadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Indicadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngDatosEmpresa.Designer.vb">
+      <DependentUpon>IngDatosEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngDatosEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngDatosEmpresaP.Designer.vb">
+      <DependentUpon>IngDatosEmpresaP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngDatosEmpresaP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngRefacc.Designer.vb">
+      <DependentUpon>IngRefacc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngRefacc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngRefaccP.Designer.vb">
+      <DependentUpon>IngRefaccP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngRefaccP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefInsertarInventario.Designer.vb">
+      <DependentUpon>JefInsertarInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefInsertarInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarInventario.Designer.vb">
+      <DependentUpon>InsertarInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefModificarInventario.Designer.vb">
+      <DependentUpon>JefModificarInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefModificarInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubInventario.Designer.vb">
+      <DependentUpon>SubInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInventario.Designer.vb">
+      <DependentUpon>ModificarInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngInventarioRefacciones.Designer.vb">
+      <DependentUpon>IngInventarioRefacciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngInventarioRefacciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefInventarioRefacciones.Designer.vb">
+      <DependentUpon>JefInventarioRefacciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefInventarioRefacciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enlace.vb" />
+    <Compile Include="JefAsignarCapacitaciones.Designer.vb">
+      <DependentUpon>JefAsignarCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefAsignarCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAsignarCapacitaciones.Designer.vb">
+      <DependentUpon>SubAsignarCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubAsignarCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefAsignarCorrectivoPropio.Designer.vb">
+      <DependentUpon>JefAsignarCorrectivoPropio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefAsignarCorrectivoPropio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAsignarCorrectivoPropio.Designer.vb">
+      <DependentUpon>SubAsignarCorrectivoPropio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubAsignarCorrectivoPropio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefAsignarPreventivoPropio.Designer.vb">
+      <DependentUpon>JefAsignarPreventivoPropio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefAsignarPreventivoPropio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAsignarPreventivoPropio.Designer.vb">
+      <DependentUpon>SubAsignarPreventivoPropio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubAsignarPreventivoPropio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefCapacitaciones.Designer.vb">
+      <DependentUpon>JefCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefMantCorrectivo.Designer.vb">
+      <DependentUpon>JefMantCorrectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefMantCorrectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefMantPreventivo.Designer.vb">
+      <DependentUpon>JefMantPreventivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefMantPreventivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMantPreventivo.Designer.vb">
+      <DependentUpon>SubMantPreventivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubMantPreventivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMantCorrectivo.Designer.vb">
+      <DependentUpon>SubMantCorrectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubMantCorrectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubCapacitaciones.Designer.vb">
+      <DependentUpon>SubCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefRefacc.Designer.vb">
+      <DependentUpon>JefRefacc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefRefacc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubRefacc.Designer.vb">
+      <DependentUpon>SubRefacc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubRefacc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefRefaccP.Designer.vb">
+      <DependentUpon>JefRefaccP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefRefaccP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubRefaccP.Designer.vb">
+      <DependentUpon>SubRefaccP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubRefaccP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenu.Designer.vb">
+      <DependentUpon>SubMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefPersonal.Designer.vb">
+      <DependentUpon>JefPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CliMenu.Designer.vb">
+      <DependentUpon>CliMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CliMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CliSoliCapacitaciones.Designer.vb">
+      <DependentUpon>CliSoliCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CliSoliCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CliSoliMantCorrectivo.Designer.vb">
+      <DependentUpon>CliSoliMantCorrectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CliSoliMantCorrectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngCapacitaciones.Designer.vb">
+      <DependentUpon>IngCapacitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngCapacitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngMenu.Designer.vb">
+      <DependentUpon>IngMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngMantCorrectivo.Designer.vb">
+      <DependentUpon>IngMantCorrectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngMantCorrectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngMantPreventivo.Designer.vb">
+      <DependentUpon>IngMantPreventivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngMantPreventivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngInventario.Designer.vb">
+      <DependentUpon>IngInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefInventario.Designer.vb">
+      <DependentUpon>JefInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefMenu.Designer.vb">
+      <DependentUpon>JefMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JefMantPreventivoCorrectivo.Designer.vb">
+      <DependentUpon>JefMantPreventivoCorrectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JefMantPreventivoCorrectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UsuariosDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosDataSet.vb">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuariosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosDataSet1.vb">
+      <DependentUpon>UsuariosDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GenerarOrdenServicio.resx">
+      <DependentUpon>GenerarOrdenServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarOrdenServicioP.resx">
+      <DependentUpon>GenerarOrdenServicioP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialEquipo.resx">
+      <DependentUpon>HistorialEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialEquipoP.resx">
+      <DependentUpon>HistorialEquipoP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indicadores.resx">
+      <DependentUpon>Indicadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngDatosEmpresa.resx">
+      <DependentUpon>IngDatosEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngDatosEmpresaP.resx">
+      <DependentUpon>IngDatosEmpresaP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngInventarioRefacciones.resx">
+      <DependentUpon>IngInventarioRefacciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngRefacc.resx">
+      <DependentUpon>IngRefacc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngRefaccP.resx">
+      <DependentUpon>IngRefaccP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefInsertarInventario.resx">
+      <DependentUpon>JefInsertarInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarInventario.resx">
+      <DependentUpon>InsertarInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefModificarInventario.resx">
+      <DependentUpon>JefModificarInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubInventario.resx">
+      <DependentUpon>SubInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInventario.resx">
+      <DependentUpon>ModificarInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefInventarioRefacciones.resx">
+      <DependentUpon>JefInventarioRefacciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefAsignarCapacitaciones.resx">
+      <DependentUpon>JefAsignarCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAsignarCapacitaciones.resx">
+      <DependentUpon>SubAsignarCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefAsignarCorrectivoPropio.resx">
+      <DependentUpon>JefAsignarCorrectivoPropio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAsignarCorrectivoPropio.resx">
+      <DependentUpon>SubAsignarCorrectivoPropio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefAsignarPreventivoPropio.resx">
+      <DependentUpon>JefAsignarPreventivoPropio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAsignarPreventivoPropio.resx">
+      <DependentUpon>SubAsignarPreventivoPropio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefCapacitaciones.resx">
+      <DependentUpon>JefCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefMantCorrectivo.resx">
+      <DependentUpon>JefMantCorrectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefMantPreventivo.resx">
+      <DependentUpon>JefMantPreventivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMantPreventivo.resx">
+      <DependentUpon>SubMantPreventivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubCapacitaciones.resx">
+      <DependentUpon>SubCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMantCorrectivo.resx">
+      <DependentUpon>SubMantCorrectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefRefacc.resx">
+      <DependentUpon>JefRefacc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubRefacc.resx">
+      <DependentUpon>SubRefacc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefRefaccP.resx">
+      <DependentUpon>JefRefaccP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubRefaccP.resx">
+      <DependentUpon>SubRefaccP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenu.resx">
+      <DependentUpon>SubMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefPersonal.resx">
+      <DependentUpon>JefPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CliMenu.resx">
+      <DependentUpon>CliMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CliSoliCapacitaciones.resx">
+      <DependentUpon>CliSoliCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CliSoliMantCorrectivo.resx">
+      <DependentUpon>CliSoliMantCorrectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngCapacitaciones.resx">
+      <DependentUpon>IngCapacitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngMenu.resx">
+      <DependentUpon>IngMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngMantCorrectivo.resx">
+      <DependentUpon>IngMantCorrectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngMantPreventivo.resx">
+      <DependentUpon>IngMantPreventivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngInventario.resx">
+      <DependentUpon>IngInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefInventario.resx">
+      <DependentUpon>JefInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefMenu.resx">
+      <DependentUpon>JefMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefMantPreventivoCorrectivo.resx">
+      <DependentUpon>JefMantPreventivoCorrectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="UsuariosDataSet.xsc">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsuariosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuariosDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsuariosDataSet.xss">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsuariosDataSet1.xsc">
+      <DependentUpon>UsuariosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UsuariosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuariosDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsuariosDataSet1.xss">
+      <DependentUpon>UsuariosDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Ximena.jpg" />
+    <None Include="Resources\Abraham.jpg" />
+    <None Include="Resources\Alexia.jpg" />
+    <None Include="Resources\Perla.jpg" />
+    <None Include="Resources\Rodrigo.jpg" />
+    <None Include="Resources\Urbina.jpg" />
+    <None Include="Resources\Alejandra.jpg" />
+    <None Include="Resources\Usuario.png" />
+    <None Include="Resources\Ivan.jpg" />
+    <None Include="Resources\Susana.jpeg" />
+    <None Include="Resources\Rodrigo1.jpeg" />
+    <Content Include="Usuarios.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
